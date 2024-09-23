@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Ryan Li</div>
+        <div class="logo">R.L.<br>EYE</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -20,7 +20,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Ryan Li</div>
+        <div class="logo">R.L.<br>EYE</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -35,6 +35,290 @@
             </div>
         </div>
     </nav>
+    <section id ="profile">
+        <div class="section__pic-container">
+            <!-- profile picture (edit later) -->
+            <img src="./assets/polaroidtransparent.png" 
+            alt="John Doe profile pciture"
+            class="polaroid">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I'm</p>
+            <h1 class="title">RYAN LI</h1>
+            <p class="section__text__p2">Director, Writer, Editor</p>
+            <div class="btn-container">
+                <!-- RESUME -->
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    DOWNLOAD RESUME
+                </button>
+                <!-- SENDING PEOPLE TO CONTACT -->
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    CONTACT ME
+                </button>
+            </div>
+            <div id="socials container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My LinkedIn"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/ryan-li-82a958251'"
+                />
+                <img 
+                src="./assets/instagram.png" 
+                alt="My Instagram"
+                class="icon" 
+                onclick="location.href='https://www.instagram.com/rl.eye/'"
+                />
+            </div>
+        </div>
+
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">ABOUT ME</h1>
+        <div class="section-container">
+            <!-- about page picture -->
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>6+ years <br />Independent Filmmaking</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Pursuing B.S. in Computational Media @ Georgia Tech</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Nostrum, recusandae. Ab quisquam dolore perferendis et ullam optio alias, porro unde voluptates vero iure rerum ad quaerat sunt impedit quam voluptatibus modi architecto quas quos repellat iste accusamus. Consequuntur modi fugiat mollitia iusto deserunt maxime ipsam dignissimos tempora. Odit, dolor! Mollitia!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#experience'"
+            />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">EXPERIENCE</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Production</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Short Films</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Music Videos</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Skits</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Post Production</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/premiere.png" 
+                            alt="Premiere icon"
+                            class="adobe-icon"
+                            />
+                            <div>
+                                <h3>Adobe Premiere</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/aftereffects.png" 
+                            alt="Experience icon"
+                            class="adobe-icon"
+                            />
+                            <div>
+                                <h3>Adobe After Effects</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/photoshop.png" 
+                            alt="Experience icon"
+                            class="adobe-icon"
+                            />
+                            <div>
+                                <h3>Adobe Photoshop</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#contact'"
+            />    
+    </section>
+    <!-- <section id="projects">
+        my version
+        <p class="section__text__p1">Discover my</p>
+        <h1 class="title">PROJECTS</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="about-details-container">
+                    <video id="videoPlayer" controls>
+                        <source id="videoSource" src="/1080cut.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                        <img src="./assets/TVOverlay.png" class="image-border" alt="Border">
+                </div>
+                <div class="about-details-container">
+                    <div class="video-selection">
+                        <button class="btn" onclick="changeVideo('/1080cut.mp4')">Video 1</button>
+                        <button class="btn" onclick="changeVideo('/Rush Video F23 Final.mp4')">Video 2</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">WORK</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <div class="article-container">
+                    <!-- You can replace this image if needed -->
+                    <!-- <img src="./assets/project-1.png" alt="Project 1" class="project-img" /> -->
+                  
+                    <!-- Embedded YouTube player -->
+                    <iframe
+                      id="videoPlayer"
+                      width="1280"
+                      height="720"
+                      src="https://www.youtube.com/embed/DEFAULT_VIDEO_ID"  
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  
+                  <h2 class="experience-sub-title project-title">Project One</h2>
+                  
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="changeVideo('dQw4w9WgXcQ')"  
+                    >
+                      Video 1
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="changeVideo('ScMzIvxBSi4')" 
+                    >
+                      Video 2
+                    </button>
+                  </div>
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">CONTACT ME</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="/assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:ryan.ruiming.li@gmail.com">ryan.ruiming.li@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="/assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:ryan.ruiming.li@gmail.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ryan Li. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
