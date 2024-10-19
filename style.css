@@ -74,15 +74,17 @@ nav {
     height: 17vh;
 }
 
-/* nav::before {
+.nav-links::before {
     content: "";
     position: absolute;
-    top: 3vh; 
-    left: 10%;
-    width: 100%;
-    height: 4px; 
-    background-color: rgb(85, 85, 85);
-} */
+    top: 2rem; /* Adjust based on desired distance from the links */
+    left: 3rem;
+    right: 0;
+    height: 2.5px; /* Thickness of the line */
+    background-color: black;
+    z-index: -1; /* Ensures the line stays behind the links */
+    transform: translateX(calc(10%)); /* Offset to match the distance from the logo */
+}
 
 .nav-links {
     gap: 2rem;
@@ -107,6 +109,7 @@ a:hover {
 .logo {
     font-family: BentonSansBlack;
     font-size: 2rem;
+    margin-top: 3rem;
 }
 
 .logo:hover {
@@ -196,12 +199,13 @@ a:hover {
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
+    padding-top: 2vh;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
+
 
 .section-container {
     display: flex;
@@ -216,6 +220,18 @@ section {
     height: 80vh;
 }
 
+#profile::before {
+    content: "李"; /* Customize your overlay text */
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 80%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text perfectly */
+    font-size: 25vw; /* Adjust for desired text size */
+    color: rgba(0, 0, 128, 0.1); /* Semi-transparent color */
+    white-space: nowrap;
+    pointer-events: none; /* Allows clicks to pass through the overlay */
+    z-index: 1; /* Adjust z-index if necessary */
+}
 .section__pic-container {
     display: flex;
     height: 400px;
@@ -289,6 +305,12 @@ section {
     gap: 1rem;
 }
 
+.text-container-2 {
+    display: flex; /* To align text inside if needed */
+    align-items: center; /* Center text vertically */
+    max-width: 400px; /* Optional: set a max width for the text container */
+}
+
 .btn {
     font-weight: 400;
     transition: all 300ms ease;
@@ -337,15 +359,42 @@ section {
     position: relative;
 }
 
+#about::before {
+    content: "我"; /* Customize your overlay text */
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-120%, -50%); /* Center the text perfectly */
+    font-size: 30vw; /* Adjust for desired text size */
+    color: rgba(0, 0, 128, 0.1); /* Semi-transparent color */
+    white-space: nowrap;
+    pointer-events: none; /* Allows clicks to pass through the overlay */
+    z-index: 1; /* Adjust z-index if necessary */
+}
+
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
+
+.about-containers2 {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+}
+
+.about-details-container-alt {
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 2rem; 
 }
 
 .about-details-container-projects {
@@ -354,7 +403,8 @@ section {
 }
 
 .about-containers, 
-.about-details-container {
+.about-details-container,
+.about-details-container-alt {
     display: flex;
 }
 
@@ -429,23 +479,6 @@ article .icon {
 }
 
 /* PROJECTS */
-/* #projects {
-    position: relative;
-}
-
-.video-container {
-    margin-top: 15vh;
-    position: relative;
-    width: 75%;
-    display: flex;
-    max-width: 1650px;
-} */
-
-/* .video-container video {
-    display: block;
-    width: 50%;
-    height: auto;
-} */
 #projects {
     position: relative;
   }
@@ -462,6 +495,7 @@ article .icon {
   }
   
   .project-title {
+    font-family: BentonSansBlack;
     margin: 1rem;
     color: black;
   }
@@ -470,6 +504,28 @@ article .icon {
     color: black;
     border-color: rgb(163, 163, 163);
   }
+.projects-container {
+    justify-content: center;
+
+}
+
+
+
+#video-article-container {
+    display: flex; /* Make it a flex container */
+    align-items: flex-start; /* Align items at the start vertically */
+    max-width: 1200px;  /* Set a maximum width */
+    max-height: 1000px; /* Set a maximum height */
+    width: 100%;       /* Adjust to fit the available width */
+    height: auto;      /* Maintain height based on content */
+    overflow: auto;    /* Add scrollbars if content exceeds the max size */
+    padding: 10px;
+
+  }
+
+ #video-project-description {
+    justify-content: right;
+ }
   
   /* CONTACT */
   
@@ -575,3 +631,46 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* VIDEO PLAYER */
+/* General styles for the video container */
+.video-container {
+    position: relative; /* Required for the absolute positioning of the iframe */
+    width: 100%; /* Full width of the parent */
+
+    max-width: 100%; /* Prevent overflow */
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden; /* Hide overflow to maintain aspect ratio */
+  }
+  
+  /* Responsive iframe */
+  .video-container iframe {
+    position: absolute; /* Allows iframe to fill the container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the width */
+    height: 100%; /* Fill the height */
+    border: none; /* No border */
+  }
+  
+  /* Button styles for the  */
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }

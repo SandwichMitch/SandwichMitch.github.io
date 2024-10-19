@@ -45,7 +45,7 @@
         <div class="section__text">
             <p class="section__text__p1"> Hello, I'm</p>
             <h1 class="title">RYAN LI</h1>
-            <p class="section__text__p2">Director, Writer, Editor</p>
+            <p class="section__text__p2">Filmmaker, Developer,<br>Storyteller.</p>
             <div class="btn-container">
                 <!-- RESUME -->
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
@@ -61,14 +61,20 @@
                 src="./assets/linkedin.png" 
                 alt="My LinkedIn"
                 class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/ryan-li-82a958251'"
+                onclick="window.open('https://www.linkedin.com/in/ryan-li-82a958251', '_blank')"
                 />
                 <img 
                 src="./assets/instagram.png" 
                 alt="My Instagram"
                 class="icon" 
-                onclick="location.href='https://www.instagram.com/rl.eye/'"
+                onclick="window.open('https://www.instagram.com/rl.eye/', '_blank')"
                 />
+                <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/SandwichMitch'"
+              />
             </div>
         </div>
 
@@ -79,7 +85,7 @@
         <div class="section-container">
             <!-- about page picture -->
             <div class="section__pic-container">
-                <img src="./assets/about-pic.png" 
+                <img src="./assets/dovercropped.png" 
                 alt="Profile picture"
                 class="about-pic"
                 />
@@ -92,7 +98,7 @@
                         class="icon"
                         />
                         <h3>Experience</h3>
-                        <p>6+ years <br />Independent Filmmaking</p>
+                        <p>6+ years <br/>Independent Filmmaking</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" 
@@ -110,6 +116,40 @@
                 </div>
             </div>
         </div>
+        <div class="section-container">
+
+          <div class="about-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <img src="./assets/experience.png" 
+                      alt="Experience icon"
+                      class="icon"
+                      />
+                      <h3>Leadership</h3>
+                      <p>2 years<br/>Georgia Tech Climbing Club and Executive Board</p>
+                  </div>
+                  <div class="details-container">
+                      <img src="./assets/education.png" 
+                      alt="Education icon"
+                      class="icon"
+                      />
+                      <h3>Hobbies</h3>
+                      <p>Other</p>
+                  </div>
+              </div>
+              <div class="text-container">
+                  <p>Lorem ipsum dolor sit amet, 
+                      consectetur adipisicing elit. Nostrum, recusandae. Ab quisquam dolore perferendis et ullam optio alias, porro unde voluptates vero iure rerum ad quaerat sunt impedit quam voluptatibus modi architecto quas quos repellat iste accusamus. Consequuntur modi fugiat mollitia iusto deserunt maxime ipsam dignissimos tempora. Odit, dolor! Mollitia!
+                  </p>
+              </div>
+          </div>
+                    <!-- about page picture -->
+                    <div class="section__pic-container">
+                      <img src="./assets/deepwatersolo.jpg" 
+                      alt="Profile picture"
+                      class="about-pic"
+                      />
+                  </div>
         <img 
             src="./assets/arrow.png" 
             alt="Arrow icon" 
@@ -207,77 +247,117 @@
             onclick="location.href='./#contact'"
             />    
     </section>
-    <!-- <section id="projects">
-        my version
-        <p class="section__text__p1">Discover my</p>
-        <h1 class="title">PROJECTS</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="about-details-container">
-                    <video id="videoPlayer" controls>
-                        <source id="videoSource" src="/1080cut.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                        <img src="./assets/TVOverlay.png" class="image-border" alt="Border">
-                </div>
-                <div class="about-details-container">
-                    <div class="video-selection">
-                        <button class="btn" onclick="changeVideo('/1080cut.mp4')">Video 1</button>
-                        <button class="btn" onclick="changeVideo('/Rush Video F23 Final.mp4')">Video 2</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section> -->
-
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">WORK</h1>
         <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <div class="article-container">
-                    <!-- You can replace this image if needed -->
-                    <!-- <img src="./assets/project-1.png" alt="Project 1" class="project-img" /> -->
-                  
-                    <!-- Embedded YouTube player -->
-                    <iframe
-                      id="videoPlayer"
-                      width="1280"
-                      height="720"
-                      src="https://www.youtube.com/embed/DEFAULT_VIDEO_ID"  
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  
-                  <h2 class="experience-sub-title project-title">Project One</h2>
-                  
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="changeVideo('dQw4w9WgXcQ')"  
-                    >
-                      Video 1
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="changeVideo('ScMzIvxBSi4')" 
-                    >
-                      Video 2
-                    </button>
-                  </div>
-                </button>
+          <div class="about-details-container-alt">
+            <div class="projects-container">
+              <div id="video-article-container" class="article-container">   
+                <!-- Video Player -->
+                <div class="video-container">
+                  <iframe
+                    id="videoPlayer"
+                    src="https://www.youtube.com/embed/3XxwVR-W8_c?si=j5rVbKhuvv5MLt1G"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <!-- Video Switch Buttons -->
+                <div class="btn-container">
+                  <button id = "btnVFX" class="btn btn-color-1" onclick="handleButtonClick(this); changeVideo('3XxwVR-W8_c')">VFX AND EDITING REEL</button>
+                  <button id ='btnRushVideo' class="btn btn-color-2" onclick="handleButtonClick(this); changeVideo('NCImzcyAX7I')">DELTA UPSILON RUSH VIDEO</button>
+                  <button id = 'btnShortFilm'class="btn btn-color-2" onclick="handleButtonClick(this); changeVideo('uqQhvEAC-qo?si=p1FxMMw8VD7N3z17')">SHORT FILM: BUZZING BAD</button>
+                </div> 
+
+                <div id="project-text" class="text-container-2">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32./p>
+                </div>
               </div>
             </div>
+
+          </div>
+        </div>
+        <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/debugger.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">DEBUGGER</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/SandwichMitch/2700-Debugger-Game', '_blank')"
+                
+              >
+                GITHUB
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://conatordev.itch.io/debugger', '_blank')"
+              >
+                LIVE DEMO
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/TheBends.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">THE BENDS</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SandwichMitch/TheBends'"
+              >
+                GITHUB
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://sandwichmitch.itch.io/the-bends'"
+              >
+                DEMO
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/centipede.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CENTIPEDE</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SandwichMitch/Centipede"
+              >
+                GITHUB
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://sandwichmitch.itch.io/centipede-scratch-recreation"
+              >
+                DEMO
+              </button>
             </div>
           </div>
         </div>
+      </div>
         <img
           src="./assets/arrow.png"
           alt="Arrow icon"
@@ -285,6 +365,7 @@
           onclick="location.href='./#contact'"
         />
       </section>
+      
       
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
