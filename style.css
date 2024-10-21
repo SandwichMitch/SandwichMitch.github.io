@@ -37,6 +37,10 @@
     src: url(./fonts/Courier\ Prime\ Italic.ttf)
 }
 
+@font-face {
+    font-family: 'BentonSans';
+    src: url(./fonts/BentonSans\ Medium.otf)
+}
 
 * {
     margin: 0;
@@ -50,6 +54,10 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 p {
@@ -215,10 +223,12 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+    margin-top: -2.75rem;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 7rem;
     height: 80vh;
+    margin-bottom: 5rem;
 }
 
 #profile::before {
@@ -226,7 +236,7 @@ section {
     position: absolute;
     top: 50%; 
     left: 80%; 
-    transform: translate(-50%, -50%); 
+    transform: translate(-55%, -55%); 
     font-size: 25vw; 
     color: rgba(0, 0, 128, 0.1); /* Semi-transparent color */
     white-space: nowrap;
@@ -241,10 +251,10 @@ section {
 }
 
 .polaroid {
-    width: 400px;
-    height: 487px;
-    transform: rotate(2deg);
-
+    width: 30rem;
+    height: 35.4rem;
+    transform: translate(-2rem, 0) rotate(2deg);
+    margin-top: -5.5rem;
 }
 
 .section__text {

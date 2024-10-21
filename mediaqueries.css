@@ -52,6 +52,12 @@
         height: 83vh;
         margin-bottom: 0;
     }
+    .polaroid {
+        width: 21rem;
+        height: 25.4rem;
+        margin-top: 2rem;
+        transform: translate(1rem, 0);
+    }
     article {
         font-size: 1rem;
     }
