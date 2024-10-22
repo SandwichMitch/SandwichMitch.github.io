@@ -86,13 +86,13 @@ nav {
 .nav-links::before {
     content: "";
     position: absolute;
-    top: 2rem; /* Adjust based on desired distance from the links */
+    top: 2rem;
     left: 3rem;
     right: 0;
-    height: 2.5px; /* Thickness of the line */
+    height: 2.5px;
     background-color: black;
-    z-index: -1; /* Ensures the line stays behind the links */
-    transform: translateX(calc(10%)); /* Offset to match the distance from the logo */
+    z-index: -1;
+    transform: translateX(calc(10%));
 }
 
 .nav-links {
@@ -238,10 +238,10 @@ section {
     left: 80%; 
     transform: translate(-55%, -55%); 
     font-size: 25vw; 
-    color: rgba(0, 0, 128, 0.1); /* Semi-transparent color */
+    color: rgba(0, 0, 128, 0.1);
     white-space: nowrap;
     pointer-events: none; 
-    z-index: 1; /* Adjust z-index if necessary */
+    z-index: 1;
 }
 .section__pic-container {
     display: flex;
@@ -322,9 +322,9 @@ section {
 }
 
 .text-container-2 {
-    display: flex; /* To align text inside if needed */
-    align-items: center; /* Center text vertically */
-    max-width: 400px; /* Optional: set a max width for the text container */
+    display: flex;
+    align-items: center;
+    max-width: 400px;
 }
 
 .btn {
@@ -376,16 +376,16 @@ section {
 }
 
 #about::before {
-    content: "我"; /* Customize your overlay text */
+    content: "我";
     position: absolute;
-    top: 50%; /* Center the text vertically */
-    left: 50%; /* Center the text horizontally */
-    transform: translate(-120%, -50%); /* Center the text perfectly */
-    font-size: 30vw; /* Adjust for desired text size */
-    color: rgba(0, 0, 128, 0.1); /* Semi-transparent color */
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+    font-size: 30vw;
+    color: rgba(0, 0, 128, 0.1);
     white-space: nowrap;
-    pointer-events: none; /* Allows clicks to pass through the overlay */
-    z-index: 1; /* Adjust z-index if necessary */
+    pointer-events: none;
+    z-index: 1;
 }
 
 .about-containers {
@@ -470,10 +470,10 @@ section {
     left: 50%; 
     transform: translate(-10%, -70%); 
     font-size: 25vw; 
-    color: rgba(0, 0, 128, 0.1); /* Semi-transparent color */
+    color: rgba(0, 0, 128, 0.1);
     white-space: nowrap;
     pointer-events: none; 
-    z-index: 1; /* Adjust z-index if necessary */
+    z-index: 1;
 }
 
 .experience-sub-title {
@@ -522,10 +522,10 @@ article .icon {
     left: 50%; 
     transform: translate(-20%, -50%); 
     font-size: 25vw; 
-    color: rgba(0, 0, 128, 0.1); /* Semi-transparent color */
+    color: rgba(0, 0, 128, 0.1);
     white-space: nowrap;
     pointer-events: none; 
-    z-index: 1; /* Adjust z-index if necessary */
+    z-index: 1;
 }
   
 .color-container {
@@ -557,13 +557,13 @@ article .icon {
 
 
 #video-article-container {
-    display: flex; /* Make it a flex container */
-    align-items: flex-start; /* Align items at the start vertically */
-    max-width: 1200px;  /* Set a maximum width */
-    max-height: 1000px; /* Set a maximum height */
-    width: 100%;       /* Adjust to fit the available width */
-    height: auto;      /* Maintain height based on content */
-    overflow: auto;    /* Add scrollbars if content exceeds the max size */
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    max-height: 1000px;
+    width: 100%;     
+    height: auto;
+    overflow: auto;
     padding: 10px;
 
   }
@@ -621,11 +621,11 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 125%; /* Increase the width to 120% of the container */
-    height: 225%; /* Increase the height to 120% of the container */
-    pointer-events: none; /* Allow clicking through the border to the video controls */
-    z-index: 10; /* Ensure the image is above the video */
-    transform: translate(-25%, -27.5%); /* Center the image */
+    width: 125%;
+    height: 225%;
+    pointer-events: none;
+    z-index: 10;
+    transform: translate(-25%, -27.5%);
 }
 
 
@@ -678,24 +678,24 @@ footer p {
 }
 
 /* VIDEO PLAYER */
-/* General styles for the video container */
-.video-container {
-    position: relative; /* Required for the absolute positioning of the iframe */
-    width: 100%; /* Full width of the parent */
 
-    max-width: 100%; /* Prevent overflow */
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    overflow: hidden; /* Hide overflow to maintain aspect ratio */
+.video-container {
+    position: relative; 
+    width: 100%;
+
+    max-width: 100%;
+    padding-top: 56.25%; 
+    overflow: hidden; 
   }
   
   /* Responsive iframe */
   .video-container iframe {
-    position: absolute; /* Allows iframe to fill the container */
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Fill the width */
-    height: 100%; /* Fill the height */
-    border: none; /* No border */
+    width: 100%;
+    height: 100%;
+    border: none;
   }
   
   /* Button styles for the  */
