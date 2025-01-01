@@ -37,3 +37,15 @@ function handleButtonClick(button) {
      // Update the lastButtonPressed variable
    lastButtonPressed = button;
 }
+
+function toggleGrid() {
+    const container = document.getElementById('projectGridContainer');
+    const button = document.querySelector('.toggle-button');
+    if (container.classList.contains('expanded')) {
+      container.classList.remove('expanded'); // Collapse the grid
+      button.textContent = 'SHOW FULL FILM AND VIDEO CATALOG';
+    } else {
+      container.classList.add('expanded'); // Expand the grid
+      button.textContent = 'HIDE FULL FILM AND VIDEO CATALOG';
+    }
+}

@@ -554,8 +554,6 @@ article .icon {
 
 }
 
-
-
 #video-article-container {
     display: flex;
     align-items: flex-start;
@@ -572,6 +570,78 @@ article .icon {
     justify-content: right;
  }
   
+/* FOR PROJECT DROP DOWN*/
+.toggle-button {
+    font-family: BentonSansBlack;
+    font-weight: bold;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    color: black;
+    background-color: white;
+    border-color: rgb(163, 163, 163);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
+  .toggle-button:focus {
+    outline: none;
+  }
+
+  .project-grid-container {
+    overflow: hidden; /* Ensures the grid is clipped during animation */
+    max-height: 0; /* Collapsed by default */
+    opacity: 0; /* Fully transparent by default */
+    transition: max-height 1.5s ease-out, opacity 1.5s ease-out; /* Same duration for reveal and hide */
+    margin-bottom: 30px;
+  }
+  .project-grid-container.expanded {
+    max-height: 3000px; /* Large enough to show the grid */
+    opacity: 1; /* Fully visible */
+    margin-bottom: 30px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* 6 columns */
+    border: 1px solid #ddd; /* Outer border for the table */
+    border-collapse: collapse; /* Ensures proper border rendering */
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures borders are included in the width */
+  }
+  .project-grid div {
+    display: flex; /* Enables flexbox for centering */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Row separators */
+    font-size: 1.75vh;
+    overflow-wrap: break-word; /* Ensures long text breaks to fit within the cell */
+  } 
+  .project-grid div:not(:nth-child(6n)) {
+    border-right: 1px solid #ddd; /* Column separators */
+  }
+  .column-header {
+    font-family: BentonSansBlack;
+    font-weight: bold;
+    background-color: #f0f0f0; /* Header row background */
+  }
+  .project-name {
+    display: flex;
+    flex-direction: column; /* Stack the thumbnail and project name vertically */
+    align-items: center; /* Center the thumbnail and project name horizontally */
+  }
+  .project-name img {
+    width: 240px;
+    height: 135px;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
   /* CONTACT */
   
   #contact {
