@@ -789,10 +789,3 @@ footer p {
   .button-container button:hover {
     background-color: #0056b3;
   }
-  /* Allow text containers to shrink naturally */
-.text-container-2,
-.details-containers,
-.about-details-container-alt {
-    width: 100%;
-    max-width: 800px;
-}
